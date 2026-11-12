@@ -1,0 +1,208 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #EAE0CF;
+  color: #111844;
+  line-height: 1.65;
+}
+
+/* Editorial & Professional Typography */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #111844;
+  letter-spacing: 0.3px;
+}
+
+h2 {
+  font-size: 1.65rem;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #111844;
+  font-weight: 700;
+}
+
+a {
+  color: #4B5694;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #111844;
+  text-decoration: underline;
+}
+
+/* Sticky Navigation Bar with Flexbox */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111844;
+  padding: 1.1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  color: #EAE0CF;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.75rem;
+}
+
+.nav-links a {
+  color: #EAE0CF;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #7288AE;
+  text-decoration: none;
+}
+
+/* Hero Header Section */
+.hero-section {
+  text-align: center;
+  padding: 4.5rem 1rem;
+  background: linear-gradient(135deg, #111844, #4B5694);
+  color: #EAE0CF;
+}
+
+.hero-section h1 {
+  color: #ffffff;
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: #EAE0CF;
+}
+
+.tagline {
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #EAE0CF;
+  opacity: 0.92;
+}
+
+/* Main Container & Card Layout */
+.container {
+  max-width: 800px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.75rem 2.25rem;
+  margin-bottom: 1.75rem;
+  border-top: 4px solid #7288AE;
+  box-shadow: 0 4px 12px rgba(17, 24, 68, 0.08);
+}
+
+/* Resume Items & Bold Dates */
+.resume-item {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #EAE0CF;
+}
+
+.resume-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.item-header h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
+
+.date-badge {
+  background-color: #7288AE;
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  letter-spacing: 0.2px;
+}
+
+.subtitle {
+  color: #4B5694;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+/* Experience Cards Styling */
+.project-card {
+  border-left: 4px solid #4B5694;
+  background-color: #f9f6f0;
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 0.85rem;
+}
+
+.project-card:last-child {
+  margin-bottom: 0;
+}
+
+/* Skills Badges Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.skill-badge {
+  background-color: #EAE0CF;
+  color: #111844;
+  border: 1px solid #7288AE;
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Contact Section Spacing */
+#contact p {
+  margin-bottom: 0.45rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #111844;
+  color: #EAE0CF;
+  font-size: 0.875rem;
+}
